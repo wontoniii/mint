@@ -7,7 +7,7 @@
 SRC_BRANCH="main"
 DEPLOY_BRANCH="gh-pages"
 
-USAGE_MSG="usage: deploy [-h|--help] [-u|--user] [-s|--src SRC_BRANCH] [-d|--deploy DEPLOY_BRANCH] [--verbose] [--no-push]"
+USAGE_MSG="usage: deploygh [-h|--help] [-u|--user] [-s|--src SRC_BRANCH] [-d|--deploy DEPLOY_BRANCH] [--verbose] [--no-push]"
 
 while [[ $# > 0 ]]; do
     key="$1"
@@ -54,24 +54,6 @@ echo "Deploy branch: $DEPLOY_BRANCH"
 read -r -p "Do you want to proceed? [y/N] " response
 if [[ ! $response =~ ^([yY][eE][sS]|[yY])+$ ]]
 then
-    echo "Aborting."
-    [[ "$0" = "$BASH_SOURCE" ]] && exit 1 || return 1
-fi
-
-# Check if there are any uncommitted changes
-if ! git diff-index --quiet HEAD --; then
-    echo "Changes to the following files are uncommitted:"
-    git diff-index --name-only HEAD --
-    echo "Please commit the changes before proceeding."
-    echo "Aborting."
-    [[ "$0" = "$BASH_SOURCE" ]] && exit 1 || return 1
-fi
-
-# Check if there are any untracked files
-if ! test -z "$(git ls-files --exclude-standard --others)"; then
-    echo "There are untracked files:"
-    git ls-files --exclude-standard --others
-    echo "Please commit those files or stash them before proceeding."
     echo "Aborting."
     [[ "$0" = "$BASH_SOURCE" ]] && exit 1 || return 1
 fi
