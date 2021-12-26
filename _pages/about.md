@@ -1,0 +1,15 @@
+---
+layout: about
+title: About
+permalink: /
+description: "Modeling Modern Network Traffic: From Data Representation to Automated Machine Learning"
+
+
+news: true  # includes a list of news items
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: true  # includes social icons at the bottom of the page
+---
+
+Both network operations and research depend on the ability to answer questions about network traffic. Decades ago, the questions were simpler: they involved traffic volumes and simple performance metrics. The answers were also more apparent: most traffic was not encrypted, and the answers to most questions were readily apparent from protocol headers and unencrypted packet payloads. Today, operators and researchers are asking more sophisticated questions about application performance, quality of experience (QoE), and malicious traffic originating from IoT devices, as well as trying to predict the impact of potential changes. And yet, as questions are becoming increasingly complex and important, network data is becoming more difficult to obtain. Increased traffic requires operators to make hard decisions about sampling and altogether precludes analyzing individual packets and reassembled streams. Furthermore, traffic is increasingly opaque. Web content has become ubiquitously encrypted, preventing operators from directly inspecting video streams to troubleshoot performance problems. Major services have moved to a handful of IP addresses on large cloud providers like Amazon, Google, and Cloudflare, removing the identity once provided by IP addresses. Networks contain increasingly heterogeneous manufacturer-controlled devices that cannot be troubleshooted locally. As a result, even seemingly simple, but important questions like *What content is sent in cleartext?* or *What is the packet loss for Netflix traffic on my network?* are impossible to answer today.
+
+This ANR-NSF funded project MINT aims to make it easier for operators and researchers to ask questions about network traffic. Doing so involves solving new, challenging research questions to create the requisite analytical building blocks required to model traffic on modern networks. Once we have the analysis platform and models in place, we can then turn to helping operators answer questions that help them more effectively run their networks and enabling researchers answer questions that drive discovery. The project involves three core following activities: (1) Study how to represent traffic data in ways that are amenable to modeling, and that could optimize models for both supervised and unsupervised modeling tasks. (2) We will build on our work on traffic data representation, to develop a set of tools to automatically explore model and traffic representations tailored for network traffic problems. (3) We will use the software platforms and algorithmic primitives we built to design new techniques and tools for operators to solve the challenges that block them from transferring developed models from isolated laboratory experiments to real-world deployments. 
