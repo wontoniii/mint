@@ -330,13 +330,24 @@ footer.sticky-bottom {
 
 // Projects
 
+.profile {
+  .card {
+    img {
+      width: 100%;
+    }
+    .card-title {
+      color: var(--global-text-color);
+    }
+  }
+}
+
 .projects {
   a {
     text-decoration: none;
 
     &:hover {
       .card-title {
-        color: var(--global-theme-color);
+        color: var(--global-text-color);
       }
     }
   }
@@ -346,7 +357,7 @@ footer.sticky-bottom {
       width: 100%;
     }
     .card-title {
-      color: $black-color;
+      color: var(--global-text-color);
     }
   }
 
