@@ -67,6 +67,15 @@ blockquote {
       margin: 0;
     }
   }
+  .card {
+    img {
+      width: 100%;
+    }
+    .card-title {
+      color: $black-color;
+      font-weight: 300;
+    }
+  }
 }
 
 @media (min-width: 576px) {
@@ -330,17 +339,6 @@ footer.sticky-bottom {
 
 // Projects
 
-.profile {
-  .card {
-    img {
-      width: 100%;
-    }
-    .card-title {
-      color: var(--global-text-color);
-    }
-  }
-}
-
 .projects {
   a {
     text-decoration: none;
@@ -357,7 +355,7 @@ footer.sticky-bottom {
       width: 100%;
     }
     .card-title {
-      color: var(--global-text-color);
+      color: $black-color;
     }
   }
 
