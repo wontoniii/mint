@@ -8,10 +8,9 @@ middle_name:
 last_name: 
 email: 
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Modeling Modern Network Traffic: From Data Representation to Automated Machine Learning
 footer_text: >
-  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  For all inquires, contact one of the the project PIs: fbronzino -at- univ-smb . fr or feamster -at- uchicago . edu
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon:  # the emoji used as the favicon
@@ -69,7 +68,7 @@ stackoverflow_id: #your stackoverflow id
 rss_icon: false
 
 contact_note: >
-  For all inquires, contact one of the the project PIs: fbronzino -at- univ-smb . fr or feamster -at- uchicago . edu
+  
 
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
 panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
