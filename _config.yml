@@ -10,7 +10,7 @@ email:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Modeling Modern Network Traffic: From Data Representation to Automated Machine Learning
 footer_text: >
-  For all inquires, contact one of the the project PIs: fbronzino -at- univ-smb . fr or feamster -at- uchicago . edu
+  For all inquires, contact one of the the project PIs: francesco -dot- bronzino -at- ens-lyon . fr or feamster -at- uchicago . edu
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon:  # the emoji used as the favicon

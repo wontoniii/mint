@@ -2,7 +2,7 @@
 layout: post
 title:  The MINT project has started! 
 date:   2021-10-21 10:00:00
-description: A quick project description
+description: Read a quick project description
 tags: project-update
 categories: 
 ---

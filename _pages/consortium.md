@@ -11,11 +11,15 @@ The ANR-NSF project MINT is a collaboration between 3 participants from France a
 
 ----
 <div class="row mt-3 mb-3">
-    <div class="col-sm mt-3 mt-md-0" style="background-color: rgb(300, 300, 300);">
-        {% responsive_image path: assets/img/Logo_USMB_hor.png class: "img-fluid rounded z-depth-0" zoomable: true %}
+    <div class="col-sm mt-3 mt-md-0" style="background-color: rgb(300, 300, 300); vertical-align:middle;padding-top: 18px;">
+        {% responsive_image path: assets/img/LogoENSAminci.png class: "img-fluid rounded z-depth-0" zoomable: true %}
     </div>
     <div class="col-sm mt-3 mt-md-0" style="background-color: rgb(300, 300, 300);">
-        {% responsive_image path: assets/img/listic-logo-horiz.jpg class: "img-fluid rounded z-depth-0" zoomable: true %}
+        {% responsive_image path: assets/img/logo_lip_fond-blanc.png class: "img-fluid rounded z-depth-0" zoomable: true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
     </div>
     <div class="col-sm mt-3 mt-md-0">
     </div>
@@ -25,9 +29,9 @@ The ANR-NSF project MINT is a collaboration between 3 participants from France a
     </div>
 </div>
 
-__Université Savoie Mont Blanc__ leads the project for the French side.
+__École normale supérieure de Lyon__ leads the project for the French side.
 
-__Key personnel:__ <a href="https://fbronzino.com">Francesco Bronzino</a> (Maître de conférences at Université Savoie Mont Blanc and LISTIC)
+__Key personnel:__ <a href="https://fbronzino.com">Francesco Bronzino</a> (Maître de conférences at École normale supérieure de Lyon and LIP)
 
 __Role in the Project:__ Leads the development of methods to tackle the technical debt incurred in deploying models in operational networks.
 
