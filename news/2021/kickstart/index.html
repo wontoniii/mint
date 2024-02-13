@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-    <meta http-equiv="refresh" content="3; url=https://mint.univ-smb.fr/" />
+    
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
   ANR-NSF MINT
 
 
-  | Page not found
+  | The MINT project has started!
 
 </title>
 <meta name="description" content="Modeling Modern Network Traffic: From Data Representation to Automated Machine Learning
@@ -38,7 +38,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="https://mint.univ-smb.fr/404.html">
+<link rel="canonical" href="https://mint.univ-smb.fr/news/2021/kickstart/">
 
 
 
@@ -150,17 +150,54 @@
     <!-- Content -->
 
     <div class="container mt-5">
-      <div class="post">
+      
+
+
+
+
+
+<div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Page not found</h1>
-    <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+    <h1 class="post-title">The MINT project has started!</h1>
+    <p class="post-meta">October 21, 2021</p>
+    <p class="post-tags">
+      <a href="/blog/2021"> <i class="fas fa-calendar fa-sm"></i> 2021 </a>
+      
+        ·  
+        
+        <a href="/blog/tag/project-update">
+          <i class="fas fa-hashtag fa-sm"></i> project-update</a>  
+          
+      
+
+      
+
+    </p>
   </header>
 
-  <article>
-    <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://mint.univ-smb.fr/">here</a>.</p>
+  <article class="post-content">
+    <p>Both network operations and research depend on the ability to answer questions about network traffic. Decades ago, the questions were simpler: they involved traffic volumes and simple performance metrics. The answers were also more apparent: most traffic was not encrypted, and the answers to most questions were readily apparent from protocol headers and unencrypted packet payloads. Today, operators and researchers are asking more sophisticated questions about application performance, quality of experience (QoE), and malicious traffic originating from IoT devices, as well as trying to predict the impact of potential changes. And yet, as questions are becoming increasingly complex and important, network data is becoming more difficult to obtain. Increased traffic requires operators to make hard decisions about sampling and altogether precludes analyzing individual packets and reassembled streams. Furthermore, traffic is increasingly opaque. Web content has become ubiquitously encrypted, preventing operators from directly inspecting video streams to troubleshoot performance problems. Major services have moved to a handful of IP addresses on large cloud providers like Amazon, Google, and Cloudflare, removing the identity once provided by IP addresses. Networks contain increasingly heterogeneous manufacturer-controlled devices that cannot be troubleshooted locally. As a result, even seemingly simple, but important questions like <em>What content is sent in cleartext?</em> or <em>What is the packet loss for Netflix traffic on my network?</em> are impossible to answer today.</p>
+
+<p>Despite traffic becoming more opaque, it is possible to infer many of the characteristics of traffic most important to operators through statistical learning. Consider for example, monitoring video steaming quality. This has become increasingly difficult as the recent adoption of HTTPS and QUIC prevents directly observing video quality metrics. Our recent work shows that it is possible to infer startup delay and resolution of encrypted video to Netflix and Youtube in real-world homes by training a model on traffic features. And yet, this model and much other previous work on applying machine learning to network operations and security has not made the transition to practice at ISPs. Most models do not perform outside of the isolated laboratory environment in which they were trained and even when robust, they require access to data that cannot be collected and analyzed in real-time on high-speed networks. Building and operationalizing inference models is more than a <em>“simple matter of engineering”</em>. Some of these challenges include: (1) evaluating models at high speeds, including performing flow reassembly at high speeds; (2) coping with dirty data, such as network traces that include other network traffic or training data that is unlabeled or (worse) erroneously labeled; (3) representing network traffic data in formats that are amenable to training; and (4) determining when to retrain these models, due to drift in network traffic patterns over time.</p>
+
+<p>This project aims to make it easier for operators and researchers to ask questions about network traffic. Doing so involves solving new, challenging research questions to create the requisite analytical building blocks required to model traffic on modern networks. Once we have the analysis platform and models in place, we can then turn to helping operators answer questions that help them more effectively run their networks and enabling researchers answer questions that drive discovery. The project involves the following activities:</p>
+
+<ul>
+  <li>
+    <p>Methods for data representation for network traffic: We will study how to represent traffic data in ways that are amenable to modeling, and that could optimize models for both supervised and unsupervised modeling tasks. This study will explore the impact of representations across four dimensions: (1) timeseries representations; (2) representations across flows; (3) representations at higher layers; and, (4) operations on compressed data.</p>
+  </li>
+  <li>
+    <p>Methods for model selection and benchmarking: We will build on our work on traffic data representation, to develop a set of tools to automatically explore model and traffic representations tailored for network traffic problems. This methods will enable the identification of optimal operation points for models applied to a variety of problems across network management. To support this goal, we will build a large-scale repository of labeled flows across a number of different applications and services as well as evaluate data representations that will be used to build statistical learning models about network traffic.</p>
+  </li>
+  <li>
+    <p>Methods for deploying models in operational networks: we will use the software platforms and algorithmic primitives we built to design new techniques and tools for operators to solve the challenges that block them from transferring developed models from isolated laboratory experiments to real-world deployments. We will support their need to monitor their networks and investigate problems in real time by: (1) extending automated model selection to account for systems costs and real world limitations; (2) addressing the need to be able to determine when models become inaccurate and distinguishing model inaccuracies from problems that are inherent to the network; (3) improve models robustness by investigating a generalized approach for model transfer.</p>
+  </li>
+</ul>
 
   </article>
+
+  
 
 </div>
 
